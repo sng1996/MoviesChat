@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CommentsViewController: UIViewController {
+class CommentsViewController: UIViewController, CommentsViewModelDelegate {
     
     @IBOutlet weak var tv: UITableView!
     @IBOutlet weak var commentView: UIView!
@@ -16,15 +16,15 @@ class CommentsViewController: UIViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var sendButton: UIButton!
     
-    
     private(set) var commentsViewModel: CommentsViewModel!
     
     var movie: Movie!
+    var isKeyboardOpen: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        commentsViewModel = CommentsViewModel(movie: movie)
+        commentsViewModel = CommentsViewModel(delegate: self, movie: movie)
         
         setup_cell()
         setup_keyboardNotifications()
@@ -68,7 +68,8 @@ class CommentsViewController: UIViewController {
             tv.frame.size.height -= keyboardRectangle.height
             commentView.frame.origin.y -= keyboardRectangle.height
             closeButton.setTitle("Close", for: .normal)
-            self.view.layoutIfNeeded()
+            isKeyboardOpen = true
+            updateTable()
         }
     }
     
@@ -76,11 +77,29 @@ class CommentsViewController: UIViewController {
         tv.frame.size.height = SGDevice.screenHeight - commentView.frame.size.height
         commentView.frame.origin.y = tv.frame.maxY
         closeButton.setTitle("Back", for: .normal)
-        self.view.layoutIfNeeded()
+        isKeyboardOpen = false
     }
     
     @IBAction func close() {
-        textField.resignFirstResponder()
+        if isKeyboardOpen {
+            textField.resignFirstResponder()
+        } else {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let moviesViewController = storyBoard.instantiateViewController(withIdentifier: "MoviesViewController") as! MoviesViewController
+            self.present(moviesViewController, animated: false, completion: nil)
+        }
+    }
+    
+    @IBAction func send() {
+        if textField.text != "" {
+            commentsViewModel.sendNewComment(textField.text!)
+        }
+        textField.text = ""
+    }
+    
+    func updateTable() {
+        tv.reloadData()
+        tv.scrollToRow(at: IndexPath(row: commentsViewModel.items.count - 1, section: 0), at: .bottom, animated: true)
     }
 
 }

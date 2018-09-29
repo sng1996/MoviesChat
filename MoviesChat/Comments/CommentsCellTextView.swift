@@ -24,8 +24,11 @@ class CommentsCellTextView: UITextView {
         let maxWidth = SGDevice.screenWidth - (2 * sideInset + avatarWidth + gap)
         
         self.text = text
+        self.font = UIFont(name: self.font!.fontName, size: 18)
+        self.isScrollEnabled = false
+        self.isUserInteractionEnabled = false
         self.textAlignment = .left
-        self.backgroundColor = .gray
+        self.backgroundColor = UIColor(red: 200/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1.0)
         self.layer.cornerRadius = 3
         self.textContainerInset = UIEdgeInsetsMake(10, 0, 10, 0)
         self.frame.size = self.sizeThatFits(CGSize(

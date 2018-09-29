@@ -1,0 +1,6 @@
+framework module Pods_MoviesChat {
+  umbrella header "Pods-MoviesChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

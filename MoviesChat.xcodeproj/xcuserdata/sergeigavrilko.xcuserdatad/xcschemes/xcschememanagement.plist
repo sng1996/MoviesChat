@@ -6,8 +6,28 @@
 	<dict>
 		<key>MoviesChat.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2A81E3DA215F101200C548E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2A81E3EE215F101300C548E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2A81E3F9215F101300C548E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
