@@ -25,7 +25,7 @@
 		2A81E420215F1CA100C548E8 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E41E215F1CA100C548E8 /* CommentCell.swift */; };
 		2A81E421215F1CA100C548E8 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A81E41F215F1CA100C548E8 /* CommentCell.xib */; };
 		2A81E423215F1CBE00C548E8 /* CommentsTableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E422215F1CBE00C548E8 /* CommentsTableExtension.swift */; };
-		2A81E425215F1EDB00C548E8 /* CommentsCellLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E424215F1EDB00C548E8 /* CommentsCellLabel.swift */; };
+		2A81E425215F1EDB00C548E8 /* CommentsCellTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E424215F1EDB00C548E8 /* CommentsCellTextView.swift */; };
 		2A81E427215F200E00C548E8 /* SGDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E426215F200E00C548E8 /* SGDevice.swift */; };
 		2A81E429215F246D00C548E8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E428215F246D00C548E8 /* Comment.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +72,7 @@
 		2A81E41E215F1CA100C548E8 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		2A81E41F215F1CA100C548E8 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		2A81E422215F1CBE00C548E8 /* CommentsTableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableExtension.swift; sourceTree = "<group>"; };
-		2A81E424215F1EDB00C548E8 /* CommentsCellLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCellLabel.swift; sourceTree = "<group>"; };
+		2A81E424215F1EDB00C548E8 /* CommentsCellTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCellTextView.swift; sourceTree = "<group>"; };
 		2A81E426215F200E00C548E8 /* SGDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGDevice.swift; sourceTree = "<group>"; };
 		2A81E428215F246D00C548E8 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,7 +175,7 @@
 				2A81E41A215F1C6300C548E8 /* CommentsViewController.swift */,
 				2A81E422215F1CBE00C548E8 /* CommentsTableExtension.swift */,
 				2A81E41C215F1C8D00C548E8 /* CommentsViewModel.swift */,
-				2A81E424215F1EDB00C548E8 /* CommentsCellLabel.swift */,
+				2A81E424215F1EDB00C548E8 /* CommentsCellTextView.swift */,
 				2A81E41E215F1CA100C548E8 /* CommentCell.swift */,
 				2A81E41F215F1CA100C548E8 /* CommentCell.xib */,
 				2A81E428215F246D00C548E8 /* Comment.swift */,
@@ -320,7 +320,7 @@
 				2A81E3E1215F101200C548E8 /* MoviesViewController.swift in Sources */,
 				2A81E40E215F109700C548E8 /* MoviesViewModel.swift in Sources */,
 				2A81E423215F1CBE00C548E8 /* CommentsTableExtension.swift in Sources */,
-				2A81E425215F1EDB00C548E8 /* CommentsCellLabel.swift in Sources */,
+				2A81E425215F1EDB00C548E8 /* CommentsCellTextView.swift in Sources */,
 				2A81E420215F1CA100C548E8 /* CommentCell.swift in Sources */,
 				2A81E41B215F1C6300C548E8 /* CommentsViewController.swift in Sources */,
 				2A81E416215F139F00C548E8 /* Movie.swift in Sources */,

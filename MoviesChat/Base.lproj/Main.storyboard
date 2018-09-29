@@ -61,9 +61,31 @@
                                     <outlet property="delegate" destination="URt-Cf-eYY" id="ASf-Th-xix"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tda-GC-9wD">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X4T-6h-MCE">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYj-eB-3Vj">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="close" destination="URt-Cf-eYY" eventType="touchUpInside" id="xZf-tm-gtx"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type a comment..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TKF-WV-ajJ">
+                                        <rect key="frame" x="60" y="0.0" width="255" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1g-7D-Z0c">
+                                        <rect key="frame" x="315" y="0.0" width="60" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Send"/>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -71,6 +93,10 @@
                         <viewLayoutGuide key="safeArea" id="aBi-8o-Wcp"/>
                     </view>
                     <connections>
+                        <outlet property="closeButton" destination="MYj-eB-3Vj" id="0ys-ac-izK"/>
+                        <outlet property="commentView" destination="X4T-6h-MCE" id="kx0-2f-Ff4"/>
+                        <outlet property="sendButton" destination="J1g-7D-Z0c" id="by3-mC-NGw"/>
+                        <outlet property="textField" destination="TKF-WV-ajJ" id="54A-Xf-OPt"/>
                         <outlet property="tv" destination="qch-3U-da3" id="tMa-92-Aqd"/>
                     </connections>
                 </viewController>

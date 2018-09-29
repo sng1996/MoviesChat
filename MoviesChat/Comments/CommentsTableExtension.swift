@@ -11,7 +11,7 @@ import UIKit
 extension CommentsViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CommentsCellLabel(commentsViewModel.items[indexPath.row].text).frame.size.height
+        return CommentsCellTextView(commentsViewModel.items[indexPath.row].text).frame.size.height
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -24,7 +24,7 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let commentsViewController = storyBoard.instantiateViewController(withIdentifier: "CommentsViewController") as! CommentsViewController
         commentsViewController.movie = moviesViewModel.items[indexPath.row]
-        self.present(commentViewController, animated: true, completion: nil)
+        self.present(commentsViewController, animated: true, completion: nil)
     }
 
 }

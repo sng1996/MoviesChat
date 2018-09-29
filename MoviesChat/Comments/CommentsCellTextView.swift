@@ -1,5 +1,5 @@
 //
-//  CommentsCellLabel.swift
+//  CommentsCellTextView.swift
 //  MoviesChat
 //
 //  Created by Сергей Гаврилко on 29.09.2018.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class CommentsCellLabel: UILabel {
+class CommentsCellTextView: UITextView {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     init(_ text: String) {
-        super.init(frame: .zero)
+        super.init(frame: CGRect.zero, textContainer: nil)
         
         let sideInset: CGFloat = 15.0
         let avatarWidth: CGFloat = 20.0
@@ -25,15 +25,9 @@ class CommentsCellLabel: UILabel {
         
         self.text = text
         self.textAlignment = .left
-        self.numberOfLines = 1000
         self.backgroundColor = .gray
         self.layer.cornerRadius = 3
-        self.safeAreaInsets = UIEdgeInsets(
-            top: 10,
-            left: 0,
-            bottom: 10,
-            right: 0
-        )
+        self.textContainerInset = UIEdgeInsetsMake(10, 0, 10, 0)
         self.frame.size = self.sizeThatFits(CGSize(
             width: maxWidth,
             height: 1000
