@@ -19,5 +19,12 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
         cell.set(moviesViewModel.items[indexPath.row].title)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let commentsViewController = storyBoard.instantiateViewController(withIdentifier: "CommentsViewController") as! CommentsViewController
+        commentsViewController.movie = moviesViewModel.items[indexPath.row]
+        self.present(commentViewController, animated: true, completion: nil)
+    }
 
 }
