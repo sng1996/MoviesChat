@@ -16,10 +16,11 @@ class CommentsViewController: UIViewController, CommentsViewModelDelegate {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var sendButton: UIButton!
     
+    private var isKeyboardOpen: Bool = false
+    
     private(set) var commentsViewModel: CommentsViewModel!
     
     var movie: Movie!
-    var isKeyboardOpen: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,15 @@ class CommentsViewController: UIViewController, CommentsViewModelDelegate {
         setPositions()
         
     }
+    
+    func updateTable() {
+        tv.reloadData()
+        if commentsViewModel.items.count > 0 {
+            tv.scrollToRow(at: IndexPath(row: commentsViewModel.items.count - 1, section: 0), at: .bottom, animated: true)
+        }
+    }
+    
+    //  Setups
     
     func setup_cell() {
         tv.register(UINib(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "CommentCell")
@@ -61,6 +71,8 @@ class CommentsViewController: UIViewController, CommentsViewModelDelegate {
         sendButton.frame.origin.x = textField.frame.maxX
         
     }
+    
+    //  Actions
     
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardFrame: NSValue = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue {
@@ -95,11 +107,6 @@ class CommentsViewController: UIViewController, CommentsViewModelDelegate {
             commentsViewModel.sendNewComment(textField.text!)
         }
         textField.text = ""
-    }
-    
-    func updateTable() {
-        tv.reloadData()
-        tv.scrollToRow(at: IndexPath(row: commentsViewModel.items.count - 1, section: 0), at: .bottom, animated: true)
     }
 
 }

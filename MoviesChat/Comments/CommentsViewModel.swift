@@ -18,10 +18,10 @@ class CommentsViewModel: NSObject {
     private(set) var items: [Comment] = []
     private(set) var movie: Movie!
     
-    var delegate: CommentsViewModelDelegate!
+    private var delegate: CommentsViewModelDelegate!
     
-    var ref: DatabaseReference?
-    var handle: DatabaseHandle?
+    private var ref: DatabaseReference?
+    private var handle: DatabaseHandle?
     
     init(delegate: CommentsViewModelDelegate, movie: Movie) {
         super.init()

@@ -24,7 +24,6 @@
 		2A81E41B215F1C6300C548E8 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E41A215F1C6300C548E8 /* CommentsViewController.swift */; };
 		2A81E41D215F1C8D00C548E8 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E41C215F1C8D00C548E8 /* CommentsViewModel.swift */; };
 		2A81E423215F1CBE00C548E8 /* CommentsTableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E422215F1CBE00C548E8 /* CommentsTableExtension.swift */; };
-		2A81E425215F1EDB00C548E8 /* CommentsCellTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E424215F1EDB00C548E8 /* CommentsCellTextView.swift */; };
 		2A81E427215F200E00C548E8 /* SGDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E426215F200E00C548E8 /* SGDevice.swift */; };
 		2A81E429215F246D00C548E8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81E428215F246D00C548E8 /* Comment.swift */; };
 		2A81E42D215F3EA800C548E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A81E42C215F3EA800C548E8 /* GoogleService-Info.plist */; };
@@ -74,7 +73,6 @@
 		2A81E41A215F1C6300C548E8 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		2A81E41C215F1C8D00C548E8 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
 		2A81E422215F1CBE00C548E8 /* CommentsTableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableExtension.swift; sourceTree = "<group>"; };
-		2A81E424215F1EDB00C548E8 /* CommentsCellTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCellTextView.swift; sourceTree = "<group>"; };
 		2A81E426215F200E00C548E8 /* SGDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGDevice.swift; sourceTree = "<group>"; };
 		2A81E428215F246D00C548E8 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		2A81E42C215F3EA800C548E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -194,7 +192,6 @@
 				2A81E41A215F1C6300C548E8 /* CommentsViewController.swift */,
 				2A81E422215F1CBE00C548E8 /* CommentsTableExtension.swift */,
 				2A81E41C215F1C8D00C548E8 /* CommentsViewModel.swift */,
-				2A81E424215F1EDB00C548E8 /* CommentsCellTextView.swift */,
 				2A81E428215F246D00C548E8 /* Comment.swift */,
 				2A81E42E215F4DF500C548E8 /* CommentCell.swift */,
 				2A81E42F215F4DF500C548E8 /* CommentCell.xib */,
@@ -410,7 +407,6 @@
 				2A81E3E1215F101200C548E8 /* MoviesViewController.swift in Sources */,
 				2A81E40E215F109700C548E8 /* MoviesViewModel.swift in Sources */,
 				2A81E423215F1CBE00C548E8 /* CommentsTableExtension.swift in Sources */,
-				2A81E425215F1EDB00C548E8 /* CommentsCellTextView.swift in Sources */,
 				2A81E41B215F1C6300C548E8 /* CommentsViewController.swift in Sources */,
 				2A81E416215F139F00C548E8 /* Movie.swift in Sources */,
 				2A81E427215F200E00C548E8 /* SGDevice.swift in Sources */,
