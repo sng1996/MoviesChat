@@ -14,9 +14,9 @@ Every entity have Model (Movie), View (MoviesViewController), ViewModel (MoviesV
 
 If I had more time, what would I like to improve?
 
-•	I would work on the UI / UX design as well as on the smoothness of the animations.
-•	Change UITextField for UITextView like in Telegram chat, when you type a text, it becomes in several lines.
-•	Write unit and ui tests, if the customer wants.
+•	I would work on the UI / UX design as well as on the smoothness of the animations
+•	Change UITextField for UITextView like in Telegram chat, when you type a text, it becomes in several lines
+•	Write unit and ui tests, if the customer wants
 •	Add auth
 •	Use Core Data to keep latest data on device
 •	Fix remaining bugs
